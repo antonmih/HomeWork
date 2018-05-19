@@ -10,5 +10,4 @@ if ( file_put_contents($file, $str)==true) {
 }
 else 
     echo 'Oops';
-echo 'git';
 ?>
