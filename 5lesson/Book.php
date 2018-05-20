@@ -4,17 +4,18 @@ class GuestBook
     protected $files;
     public $text;
     public $res;
+
     public function __construct ($files)
     {
-        $this->files=$files;  
-        }
+        $this->files=$files;
+    }
     
     public function getData() 
     {
         $this->res = file($this->files);
         foreach ($this->res as $name) 
         {
-          echo  $name; 
+          return  $name;
         }
     }
     
